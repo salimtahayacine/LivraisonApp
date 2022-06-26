@@ -1,0 +1,7 @@
+{
+  "name": "LivraisonApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
