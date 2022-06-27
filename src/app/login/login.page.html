@@ -1,33 +1,34 @@
-<ion-header>
-  <ion-toolbar style="text-align:center;">
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
-  <br><br><br><br>
+  <br>
   <div style="text-align:center;">
   <ion-grid style="background-color:lightgray;border-radius: 10px;margin:10px;">
     <br>
       <img src="assets/scooter.png" style="height:120px;" alt="">
       <br><br>
         <div style="text-align:center;">
-          
+          <select  id="type-Livraison" class="form-select" aria-label="choisie votre type de livraison">
+            <option selected>choisie votre vile</option>
+            <option value="Casa">Casa</option>
+            <option value="rabat">Rabat</option>
+            <option value="tanger">tanger</option>
+          </select><br>
             <input class="form-control" name="email" type="email" placeholder="Votre@email.com" />
             <br>
             <input class="form-control" name="password" type="password" placeholder="mot de pass" />
             <br>
             <a  style="text-decoration: none;color: white;">Mot de pass oublier ?</a>
         </div>
-        <br><br>
         <div>
-          <ion-button size="large" type="submit"  expand="block">Se Connecter</ion-button>
+          <ion-button size="large" type="submit"  expand="block" >Se Connecter</ion-button><br>
+          <ion-text>Vous avez pas de compt ?</ion-text>
         </div>
       
     
     <div style="text-align: center;"><br>
-    <a routerLink="/register" style="text-decoration: none;color: white;">
-        Register</a>
+    <button routerLink="/register" class="btn btn-secondary">
+        Register</button>
+        <br><br>
     </div>
   </ion-grid>
 </div>
